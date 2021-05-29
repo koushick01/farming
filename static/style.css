@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: rgb(245, 245, 245);
+    font-size: 24px;
+}
+body{
+    margin: 100px;
+    margin-left: 440px;
+    margin-right: 150px;
+}
+
+h2{
+    font-size: 54px;
+    color: rgb(55, 0, 255);
+}
+h1{
+    margin-top: -50px;
+    font-size: 64px;
+    color: red;
+}
+h3{
+    font-size: 40px;
+}
+h6{
+    font-size: 18px;
+}
+.img1{
+    margin-right: 20px;
+    display: block;
+    float: left;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#toc{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 25px;
+    top: 0%;
+    position: fixed;
+    margin: 20px;
+    margin-top: 80px;
+    margin-left: -420px;
+    width: 380px;
+    font-family: Times, serif;
+    border: 3px solid rgb(5, 183, 253);
+    padding: 20px;
+    /* height: 100vh; */
+}
+#toc p{
+    padding: 8px;
+}
+#toc p a{
+    outline: 0;
+    width: 100vh;
+}
+#table{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    width: 100%;
+}
+#table td, #table th {
+    border: 1px solid rgb(66, 10, 10);
+    padding: 8px;
+}
+.image{
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 7px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+}
+.harvestimage{
+    height: 300px;
+    float: left;
+    margin-right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 10px;
+}
+.ul1{
+    padding-left: 350px ;
+    list-style-type: circle;
+}
+.ul2{
+    z-index: -1;
+    margin-top: 20px;
+    float: left;
+    padding-left: 20px ;
+    list-style-type: circle;
+}
+.ul3{
+    list-style-type: circle;
+}
+.ul5{
+    padding-left: 30px ;
+    list-style-type: circle;
+}
+.harvesttypes{
+    list-style-type: square ;
+}
+#fercontainer{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.product{
+    flex-wrap: wrap;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    margin: 40px;
+    width: 200px;
+    flex-basis: 50%;
+}
+.product img{
+    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+.product a, .product p{
+    font-size: 18px;
+    display: block;
+    margin: 20px;
+    background: white;
+}

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta lang="en-us" />
+        <title>Market-price</title>
+        <link rel="icon" href="../static/ft.png" />
+        <link rel="stylesheet" href="../static/market.css" />
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Rice-Rate", { role: "style" }],
+                    ["January", 70, "#b87333"],
+                    [" May", 65.6, "blue"],
+                    ["September", 49, "gold"],
+                    ["December-January", 76, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of Rice per Kg ",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Wheat-Rate", { role: "style" }],
+                    ["January", 40, "#b87333"],
+                    [" May", 31.6, "blue"],
+                    ["September", 20, "gold"],
+                    ["December-January", 27, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of wheat per Kg",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchartt_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Maize-Rate", { role: "style" }],
+                    ["January", 40, "#b87333"],
+                    [" May", 31, "blue"],
+                    ["September", 35, "gold"],
+                    ["December-January", 21, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of wheat per Kg",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart1_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Tomato-Rate", { role: "style" }],
+                    ["January", 45, "#b87333"],
+                    [" May", 30, "blue"],
+                    ["September", 55, "gold"],
+                    ["December-January", 72, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of wheat per Kg",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart2_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Potato-Rate", { role: "style" }],
+                    ["January", 23, "#b87333"],
+                    [" May", 27, "blue"],
+                    ["September", 16, "gold"],
+                    ["December-January", 30, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of wheat per Kg",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart3_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Onion-Rate", { role: "style" }],
+                    ["January", 27, "#b87333"],
+                    [" May", 30, "blue"],
+                    ["September", 21, "gold"],
+                    ["December-January", 24, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of wheat per Kg",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart4_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Apple-Rate", { role: "style" }],
+                    ["January", 125, "#b87333"],
+                    [" May", 285, "blue"],
+                    ["September", 180, "gold"],
+                    ["December-January", 100, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of wheat per Kg",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart5_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Mango-Rate", { role: "style" }],
+                    ["January", 185, "#b87333"],
+                    [" May", 140, "blue"],
+                    ["September", 270, "gold"],
+                    ["December-January", 200, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of wheat per Kg",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart6_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Month", "Banana-Rate", { role: "style" }],
+                    ["January", 35, "#b87333"],
+                    [" May", 42, "blue"],
+                    ["September", 25, "gold"],
+                    ["December-January", 30, "color: #b87333"],
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
+
+                var options = {
+                    title: " average cost of wheat per Kg",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart7_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="/"
+                    ><img src="../static/farmtext.png" style="width: 230px; height: 70px"
+                /></a>
+            </div>
+            <div>
+                <ul class="navigation1">
+                    <li class="navi">
+                        <a href="/home" class="box">Home</a>
+                    </li>
+                    <li class="navi active">
+                        <span class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <span id="myDropdown" class="dropdown-content">
+                                <a href="/fertilizer"
+                                    >Fertilisers and Seeds</a
+                                >
+                                <a href="/weather">Weather</a>
+                                <a href="/market">Market Price</a>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="navi">
+                        <a href="/news" class="box">News</a>
+                    </li>
+                    <li class="navi">
+                        <a href="/login" class="box">Log In</a>
+                    </li>
+                    <li class="navi">
+                        <a href="/team" class="box">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <table class="crops">
+                <h4>Major Crops</h4>
+                <ul>
+                    <li><a href="/rice">Rice</a></li>
+                    <li><a href="/wheat">Wheat</a></li>
+                    <li><a href="/maize">Maize</a></li>
+                </ul>
+                <hr />
+                <h4>Vegetables</h4>
+                <ul>
+                    <li><a href="/tomato">Tomato</a></li>
+                    <li><a href="/potato">Potato</a></li>
+                    <li><a href="/onion">Onion</a></li>
+                </ul>
+                <hr />
+                <h4>Fruits</h4>
+                <ul>
+                    <li><a href="/apple">Apple</a></li>
+                    <li><a href="/mango">Mango</a></li>
+                    <li><a href="/banana">Banana</a></li>
+                </ul>
+            </table>
+        </article>
+        <div id="container">
+
+            <div id="rice">
+                <br /><br /><br /><br><br>
+                <a href="/rice" target="_blank"><h1 id="rice">Rice</h1></a> 
+                <div
+                    id="columnchart_values"
+                    style="
+                        width: 400px;
+                        height: 400px;
+                        margin-left: 400px;
+                        margin-bottom: 100px;
+                    "
+                ></div>
+            </div>
+            <div id="wheat">
+                <br /><br /><br /><br /><br>
+                <a href="/wheat" target="_blank"><h1 id="wheat">Wheat</h1></a> 
+                <div
+                    id="columnchartt_values"
+                    style="
+                        width: 400px;
+                        height: 400px;
+                        margin-left: 400px;
+                        margin-bottom: 100px;
+                    "
+                ></div>
+            </div>
+          <div id="maize">
+              <br /><br /><br /><br /><br>
+              <a href="/maize" target="_blank"><h1 id="maize">Maize</h1></a> 
+            <div
+                id="columnchart1_values"
+                style="
+                    width: 400px;
+                    height: 400px;
+                    margin-left: 400px;
+                    margin-bottom: 100px;
+                "
+            ></div>
+          </div>
+          <div id="tomato">
+              <br /><br /><br /><br /><br>
+              <a href="/tomato" target="_blank"><h1 id="tomato">Tomato</h1></a> 
+            <div
+                id="columnchart2_values"
+                style="
+                    width: 400px;
+                    height: 400px;
+                    margin-left: 400px;
+                    margin-bottom: 100px;
+                "
+            ></div>
+          </div>
+          <div id="potato">
+              <br /><br /><br /><br /><br>
+              <a href="/potato" target="_blank"><h1 id="potato">Potato</h1></a> 
+            <div
+                id="columnchart3_values"
+                style="
+                    width: 400px;
+                    height: 400px;
+                    margin-left: 400px;
+                    margin-bottom: 100px;
+                "
+            ></div>
+          </div>
+          <div id="onion">
+              <br /><br /><br /><br /><br>
+              <a href="/onion" target="_blank"><h1 id="onion">Onion</h1></a> 
+            <div
+                id="columnchart4_values"
+                style="
+                    width: 400px;
+                    height: 400px;
+                    margin-left: 400px;
+                    margin-bottom: 100px;
+                "
+            ></div>
+          </div>
+          <div id="apple">
+              <br /><br /><br /><br /><br>
+              <a href="/apple" target="_blank"><h1 id="apple">Apple</h1></a> 
+            <div
+                id="columnchart5_values"
+                style="
+                    width: 400px;
+                    height: 400px;
+                    margin-left: 400px;
+                    margin-bottom: 100px;
+                "
+            ></div>
+          </div>
+          <div id="mango">
+              <br /><br /><br /><br /><br>
+              <a href="/mango" target="_blank"><h1 id="mango">Mango</h1></a> 
+            <div
+                id="columnchart6_values"
+                style="
+                    width: 400px;
+                    height: 400px;
+                    margin-left: 400px;
+                    margin-bottom: 100px;
+                "
+            ></div>
+          </div>
+          <div id="banana">
+              <br /><br /><br /><br /><br>
+              <a href="/banana" target="_blank"><h1 id="banana">Banana</h1></a> 
+            <div
+                id="columnchart7_values"
+                style="
+                    width: 400px;
+                    height: 400px;
+                    margin-left: 400px;
+                    margin-bottom: 100px;
+                "
+            ></div>
+          </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("ul.navigation1 > li").click(function (e) {
+                 $("ul.navigation1 > li").removeClass("active");
+                 $(this).addClass("active");
+                  });
+              });
+          </script>
+    </body>
+</html>

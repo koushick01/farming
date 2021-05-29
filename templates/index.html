@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta lang="en-us"/>
+        <title>Farm Tech</title>
+        <link rel="icon" href="../static/ft.png" />
+        <link rel="stylesheet" href="../static/start1.css">
+    </head>
+    <body>
+        <div class="wrapper">
+                <nav>
+                    <div>
+                    <img class="logo" src="../static/farmtext.png" style="width: 230px; height: 70px;">
+                    </div>
+                    <div>
+                    <ul class="navigation1">
+                        <li class="navi"><a href="/home" class="box">Home</a></li>
+                        <li class="navi">
+                            <span class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <span id="myDropdown" class="dropdown-content">
+                                <a href="/fertilizer">Fertilisers and Seeds</a>
+                                <a href="/weather" >Weather</a>
+                                <a href="/market" >Market Price</a>
+                                </span>
+                            </span>    
+                        </li>
+                        <li class="navi"><a href="/news" class="box">News</a></li>
+                        <li class="navi"><a href="/login" class="box">Log In</a></li>
+                        <li class="navi"><a href="/team" class="box">Our Team</a></li>
+                        </ul>
+                    </div>  
+                </nav>
+                <main>
+                <div class="firstpage">
+                    Investments in agriculture are the best weapons against hunger and poverty, <br>
+                    and they have made life better for billions of people.<br>
+                    We are working to create that change.
+                </div>
+                <ul class="statistics">
+                        
+                        <li class="stats"> 
+                            <span class="stats1">   
+                                <span class="percent">14%  </span> reduce in Global workforce in Agriculture in 2020.
+                            </span>
+                        </li>
+                        <li class="stats">
+                            <span class="stats2">    
+                                <span class="percent">330  </span> farmers are quitting every week.
+                            </span>           
+                        </li>
+                </ul>     
+                </main>
+        </div>    
+        <script>    
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+    </body>
+</html>

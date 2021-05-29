@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title >Our Team</title>
+	<link rel="stylesheet" type="text/css" href="../static/ourteam.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../static/ft.png">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/"
+                ><img src="../static/farmtext.png" style="width: 230px; height: 70px"
+            /></a>
+        </div>
+        <div>
+            <ul class="navigation1">
+                <li class="navi">
+                    <a href="/home" class="box">Home</a>
+                </li>
+                <li class="navi">
+                    <span class="dropdown">
+                        <button class="dropbtn">Services</button>
+                        <span id="myDropdown" class="dropdown-content">
+                            <a href="/fertilizer">Fertilisers and Seeds</a>
+                            <a href="/weather" >Weather</a>
+                            <a href="/market" >Market Price</a>
+                        </span>
+                    </span>
+                </li>
+                <li class="navi">
+                    <a href="/news" class="box" >News</a>
+                </li>
+                <li class="navi">
+                    <a href="/login" class="box">Log In</a>
+                </li>
+                <li class="navi active">
+                    <a href="/team" class="box" >Our Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <h1>OUR TEAM</h1>
+    <div class="team members">
+        <div class="cardd first">
+            <div class="cardd frontt">
+                 <img src="../static/loki.JPG" alt="">
+            </div>
+            <div class="backk">
+                <div class="backk-content frontt">
+                    <h2>Lokeswaran A</h2>
+                    <span>Web Designer</span>
+                    <div class="socialmedia">
+                        <a href="https://www.instagram.com/brocoder.py/" class="social" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/brocoder_py" class="social" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/lokeswaran-aruljothi" class="social" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="card middle">
+        <div class="card front">
+             <img src="../static/gr.jpeg" alt="">
+        </div>
+        <div class="back">
+            <div class="back-content middle">
+                <h2>RAHUL G</h2>
+                <span>Web Designer</span>
+                <div class="socialmedia">
+                    <a href="https://www.instagram.com/brocoder.py/" class="social" target="_blank"><i class="fa fa-instagram"></i></a>
+		            <a href="https://twitter.com/brocoder_py" class="social" target="_blank"><i class="fa fa-twitter"></i></a>
+		            <a href="https://www.linkedin.com/in/lokeswaran-aruljothi" class="social" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="carddd last">
+        <div class="carddd fronttt">
+             <img src="../static/koushick.jpg" alt="">
+        </div>
+        <div class="backkk">
+            <div class="backkk-contentlast">
+                <h2>Koushick P</h2>
+                <span>Web Designer</span>
+                <div class="socialmedia">
+                    <a href="https://www.instagram.com/brocoder.py/" class="social" target="_blank"><i class="fa fa-instagram"></i></a>
+		            <a href="https://twitter.com/brocoder_py" class="social" target="_blank"><i class="fa fa-twitter"></i></a>
+		            <a href="https://www.linkedin.com/in/lokeswaran-aruljothi" class="social" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+                        
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $("ul.navigation1 > li").click(function (e) {
+             $("ul.navigation1 > li").removeClass("active");
+             $(this).addClass("active");
+              });
+          });
+      </script>
+    
+    
+</body>

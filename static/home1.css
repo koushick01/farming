@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+    background-color: white;
+}
+nav{
+    margin: 0px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    margin-top: 0px; 
+    padding-bottom: 10px;  
+    padding-top: 20px;
+}
+.logo{
+    
+    margin-left: 80px;
+}
+.navigation1{
+    float: right;
+    margin-right: 100px;
+    margin-top: -40px;
+}
+li{
+    list-style-type: none;
+}
+.navi{
+    display: inline;
+}
+button,.box{
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    outline: none;
+}
+button:hover,.box:hover{
+    cursor: pointer;
+    color: rgb(0, 255, 0);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    width: 200px;
+    height: 150px;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(36,36,36,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .dropdown-content a:hover{
+      color: rgb(40, 197, 61);
+      font-weight: 600;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+}
+article{
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 70px;
+    border: 2px solid grey;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 3px 7px 2px gray;
+    margin-bottom: 20px;
+
+}
+h4{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+article h4{
+    color: rgba(245, 13, 13,0.9);
+}
+article a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+article li{
+    list-style-type: disc;
+    line-height: 30px;
+}
+article a:hover{
+    color: rgb(6, 114, 33);
+}
+main{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.para{
+    width: 900px;
+    margin-top: 30px;
+}
+section{
+    position: static;
+    float: right;
+    width: 350px;
+    margin-top: 40px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+section h4{
+    color:  rgba(193, 35, 224,1.0);
+}
+section a{
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+section a:hover{
+    color: blue;
+}
+section li{
+    line-height: 25px;
+    list-style-type: circle;
+}

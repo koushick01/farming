@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta lang="en-us"/>
+        <title>Farm Tech - Home</title>
+        <link rel="icon" href="../static/ft.png">
+        <link rel="stylesheet" href="../static/home1.css">    
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="../static/farmtext.png" style="width: 230px; height: 70px;"></a>
+            </div>
+            <div>
+                <ul class="navigation1">
+                    <li class="navi active"><a href="/home" class="box">Home</a></li>
+                    <li class="navi">
+                        <span class="dropdown navi">
+                            <button class="dropbtn" >Services</button>
+                            <span id="myDropdown" class="dropdown-content">
+                            <a href="/fertilizer">Fertilisers and Seeds</a>
+                            <a href="/weather"  >Weather</a>
+                            <a href="/market"  >Market Price</a>
+                            </span>
+                        </span>    
+                    </li>
+                    <li class="navi"><a href="/news" class="box">News</a></li>
+                    <li class="navi"><a href="/login" class="box" >Log In</a></li>
+                    <li class="navi"><a href="/team" class="box" >Our Team</a></li>
+                    </ul>
+            </div>  
+        </nav>
+        <article>
+            <table class="crops">
+                <h4>Major Crops</h4>
+                <ul>
+                   <li><a href="/rice" target="_blank">Paddy</a></li>
+                   <li><a href="/wheat" target="_blank">Wheat</a></li>
+                   <li><a href="/maize" target="_blank">Maize</a></li>
+                </ul><hr>
+                <h4>Vegetables</h4>
+                <ul>   
+                   <li><a href="/tomato" target="_blank">Tomato</a></li>
+                   <li><a href="/potato" target="_blank">Potato</a></li>
+                   <li><a href="/onion" target="_blank">Onion</a></li>
+                </ul><hr>
+                <h4>Fruits</h4>
+                <ul>   
+                   <li><a href="/apple" target="_blank">Apple</a></li>
+                   <li><a href="/mango" target="_blank">Mango</a></li>
+                   <li><a href="/banana" target="_blank">Banana</a></li>
+                </ul>  
+            </table>
+        </article>
+        <section>
+            <table>
+                <h4>Agricultural Schemes</h4>
+                <ul>
+                    <li><a href="https://www.india.gov.in/website-pradhan-mantri-fasal-bima-yojana" target="_blank">Website of Pradhan Mantri Fasal Bima Yojana</a></li>
+                   <li><a href="https://www.india.gov.in/website-prime-minister-krishi-sinchayee-yojana" target="_blank">Website of Prime Minister Krishi Sinchayee Yojana</a></li>
+                    <li><a href="https://www.india.gov.in/website-national-centre-cold-chain-development" target="_blank">Website of National Centre for Cold-Chain Development</a></li>
+                    <li><a href="https://www.india.gov.in/direct-benefit-transfer-dbt-portal-agriculture-schemes" target="_blank">Direct Benefit Transfer (DBT) Portal for Agriculture Schemes</a></li>
+                </ul><hr>
+                <h4>Other Services</h4>
+                <ul>
+                    <li><a href="https://gramawardsachivalayam.ap.gov.in/GSWS/Home/Main" target="_blank">YSR RAITHU BHAROSA - New Farmer Registration</a></li>
+                   <li><a href="http://himachalforms.nic.in/pdfs/Industry/TechnologyUpgradationEstablishmentModernizationofFoodProcessingIndustries.pdf" target="_blank">Application form for Technology Upgradation/Establishment/Modernization of Food Processing Industries, Himachal Pradesh</a></li>
+                    <li><a href="https://www.goa.gov.in/wp-content/uploads/2016/05/Fisheries-Dept-Charter.pdf" target="_blank">Online application form for renewal of registration of fishing nets in Goa</a></li>
+                    <li><a href="https://agritech.tnau.ac.in/crop_insurance/crop_insurance_nias.html" target="_blank">Online Crop Insurance (NAIS) Application</a></li>
+                </ul>
+            </table>
+        </section>
+        <main>
+            <img src="https://www.india.gov.in/sites/upload_files/npi/files/agriculture_0.png" width="200px" height="200px">
+            <div class="para">Agriculture, with its allied sectors, is unquestionably the largest livelihood provider in India, more so in the vast rural areas.
+               It also contributes a significant figure to the Gross Domestic Product (GDP). Sustainable agriculture, in terms of food security, 
+               rural employment, and environmentally sustainable technologies such as soil conservation, sustainable natural resource management 
+               and biodiversity protection, are essential for holistic rural development. Indian agriculture and allied activities have witnessed
+               a green revolution, a white revolution, a yellow revolution and a blue revolution.<br>
+               We provide information on agricultural produces, crops, weather, market prices. We also offer best quality seeds and fertilisers 
+               for the healthy growth of your plants. We also provide you statistics on recent changes in market prices of crops and latest news on Agriculture.
+            </div>
+        </main>
+        <script>
+            $(document).ready(function () {
+                $("ul.navigation1 > li").click(function (e) {
+                 $("ul.navigation1 > li").removeClass("active");
+                 $(this).addClass("active");
+                  });
+              });
+          </script>
+    </body>
+</html>

@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "montserrat";
+}
+body{
+	background-color:rgb(19, 18, 17);
+    
+}
+h1{
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    color: ivory;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+.card{
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    align-content: center;
+
+}
+.front,.back{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s linear;
+
+
+}
+.front img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    
+    outline: none;
+    
+    
+}
+*.front{
+    background: #f1f1f1;
+    transform: perspective(800px) rotateY(0deg);
+
+}
+
+
+.back{
+    background: #f1f1f1;
+    transform: perspective(800px) rotateY(180deg);
+
+}
+.back-content{
+    color: #2c3e50;
+    font-size: 20px;
+    margin-left: 120px;
+    left:30px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+
+}
+.socialmedia{
+margin: 20px;
+}
+.socialmedia a{
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color:#2c3e50 ;
+    transition: 0.4s;
+    border-radius: 50%;
+
+}
+.socialmedia a:hover{
+    background: #2c3e50;
+    color: #f1f1f1;
+}
+.card:hover >.front{
+    transform: perspective(600px) rotateY(-180deg);
+
+
+}
+.card:hover >.back{
+    transform: perspective(600px) rotateY(0deg);
+}
+/*------------------------------------*/
+
+
+.first{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cardd{
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+}
+.frontt,.backk{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s linear;
+
+
+}
+.frontt img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    outline: none;
+    
+    
+}
+.frontt{
+    background: #f1f1f1;
+    transform: perspective(800px) rotateY(0deg);
+
+}
+
+
+.backk{
+    background: #f1f1f1;
+    transform: perspective(800px) rotateY(180deg);
+
+}
+.backk-content{
+    color: #2c3e50;
+    font-size: 20px;
+    margin-top: 90px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+}
+.socialmedia{
+    margin: 20px;
+    }
+    .socialmedia a{
+        margin: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        color:#2c3e50 ;
+        transition: 0.4s;
+        border-radius: 50%;
+    
+    }
+    .socialmedia a:hover{
+        background: #2c3e50;
+        color: #f1f1f1;
+    }
+    .cardd:hover >.frontt{
+        transform: perspective(600px) rotateY(-180deg);
+    
+    
+    }
+    .cardd:hover >.backk{
+        transform: perspective(600px) rotateY(0deg);
+    }   
+        /*------------------------------------*/
+    .last{
+
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+    }
+    .carddd{
+        cursor: pointer;
+        width: 300px;
+        height: 400px;
+    }
+    .fronttt,.backkk{
+        width: 100%;
+        height: 100%;
+        overflow:hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform 0.6s linear;
+    
+    
+    }
+    .fronttt img{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        letter-spacing: 1px;
+        outline: none;
+        
+        
+    }
+    .fronttt{
+        background: #f1f1f1;
+        transform: perspective(800px) rotateY(0deg);
+    
+    }
+    
+    
+    .backkk{
+        background: #f1f1f1;
+        transform: perspective(800px) rotateY(180deg);
+    
+    }
+    .backkk-contentlast{
+        color: #2c3e50;
+        font-size: 20px;
+        font-weight: bold;
+        left: auto;
+        margin-top: 90px;
+        text-align: center;
+        align-content: center;
+        width: 100%;
+    
+    }
+    .socialmedia{
+        margin: 20px;
+        }
+        .socialmedia a{
+            margin: 10px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            color:#2c3e50 ;
+            transition: 0.4s;
+            border-radius: 50%;
+        
+        }
+        .socialmedia a:hover{
+            background: #2c3e50;
+            color: #f1f1f1;
+        }
+        .carddd:hover >.fronttt{
+            transform: perspective(600px) rotateY(-180deg);
+        
+        
+        }
+        .carddd:hover >.backkk{
+            transform: perspective(600px) rotateY(0deg);
+        }

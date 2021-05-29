@@ -1,0 +1,108 @@
+body{
+    margin: 0px;
+    padding: 0%;
+    font-family:sans-serif;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+nav{
+    margin: 0px;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    margin-top: 0px; 
+    padding-bottom: 20px; 
+    padding-top: 20px;
+}
+.logo{
+    margin-left: 80px;
+}
+.navigation1{
+    float: right;
+    margin-right: 100px;
+    margin-top: -40px;
+}
+li{
+    list-style-type: none;
+}
+.navi{
+    display: inline;
+}
+button,.box{
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    outline: none;
+}
+button:hover,.box:hover{
+    cursor: pointer;
+    color: rgb(0, 255, 0);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+width: 200px;
+height: 180px;
+overflow: auto;
+border-radius: 10px;
+box-shadow: 0px 8px 16px 0px rgba(36,36,36,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: gray;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+font-size: 18px;
+margin-top: 5px;
+}
+.navigation1>.active>span>button{
+    color: red;
+}
+.dropdown-content a:hover{
+    color: rgb(40, 197, 61);
+    font-weight: 600;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.fercontainer{
+    margin:0px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product{
+    /* flex-wrap: wrap; */
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    margin: 40px;
+    width: 400px;
+    flex-basis: 50%;
+}
+.product img{
+    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+    object-fit: fill;
+}
+.product a, .product p{
+    font-size: 18px;
+    display: block;
+    margin: 20px;
+    background: white;
+}

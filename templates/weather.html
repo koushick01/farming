@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/weather.css">
+    <link rel="icon" href="../static/ft.png" />
+    <title>Weather</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/"
+                ><img src="../static/farmtext.png" style="width: 230px; height: 70px"
+            /></a>
+        </div>
+        <div>
+            <ul class="navigation1">
+                <li class="navi">
+                    <a href="/home" class="box">Home</a>
+                </li>
+                <li class="navi active">
+                    <span class="dropdown">
+                        <button class="dropbtn">Services</button>
+                        <span id="myDropdown" class="dropdown-content">
+                            <a href="/fertilizer">Fertilisers and Seeds</a>
+                            <a href="/weather" >Weather</a>
+                            <a href="/market" >Market Price</a>
+                        </span>
+                    </span>
+                </li>
+                <li class="navi">
+                    <a href="/news" class="box" >News</a>
+                </li>
+                <li class="navi">
+                    <a href="/login" class="box">Log In</a>
+                </li>
+                <li class="navi">
+                    <a href="/team" class="box" >Our Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form action="#" id="search-form">
+        <input type="search" placeholder="Enter City Name" id="search-input" required autocomplete="off"><br><br>
+        <button id="search-button">Search</button>
+    </form>
+    <main id="app-container">
+        <div id="location">
+            <p>-----</p>
+        </div>
+        <div id="temp">
+            <img src="../static/icons/sun.svg" alt="" id="temp-icon">
+            <p><span id="temp-value">------</span><span id="temp-unit">&#176c</span></p>
+            <div id="climate">
+                <p>-----</p>
+            </div>
+        </div>
+    </main>
+    <script src="../static/weather1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("ul.navigation1 > li").click(function (e) {
+             $("ul.navigation1 > li").removeClass("active");
+             $(this).addClass("active");
+              });
+          });
+      </script>
+</body>
+</html>
